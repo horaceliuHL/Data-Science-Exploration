@@ -136,7 +136,7 @@ print("Root Mean Squared Error: " + str(rms))
 # Generating a csv dump of predicted values
 df = pd.DataFrame({'date': weather['time'][334:],
                    'predicted': predictedEnergy})
-df.to_csv('cse351_hw2_liu_horace_112833815_linear_regression.csv', index=False)
+df.to_csv('linear_regression.csv', index=False)
 
 
 # ### Part 4
@@ -199,7 +199,7 @@ print("The F1 score for the classifier was: " + str(score))
 # Generating a csv dump of predicted values
 df = pd.DataFrame({'date': weather['time'][334:],
                    'predicted': class_pred})
-df.to_csv('cse351_hw2_liu_horace_112833815_logistic_regression.csv', index=False)
+df.to_csv('logistic_regression.csv', index=False)
 
 
 # ### Part 5
